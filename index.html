@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulation de l'évolution du nombre d'utilisateur</title>
+    <script src="lib/chart.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/favicon.ico">
+</head>
+<body>
+    <div class="container">
+        <h1>Générer un Graphique de Croissance d'Utilisateurs (Méthode RK4)</h1>
+        
+        <div class="form-group">
+            <label for="r">Taux de Croissance :</label>
+            <input type="number" class="r" placeholder="Entrez le taux de croissance">
+        </div>
+
+        <div class="form-group">
+            <label for="N0">Nombre Initial d'Utilisateurs :</label>
+            <input type="number" class="N0" placeholder="Minimum 1">
+        </div>
+
+        <div class="form-group">
+            <label for="K">Capacité Maximale :</label>
+            <input type="number" class="K" placeholder="Entrez le nombre maximale d'utilisateur">
+        </div>
+
+        <button onclick="generateGraph()">Générer le Graphique</button>
+        <button onclick="actualiser()">Actualiser</button>
+
+        
+
+        <canvas id="chartCanvas"></canvas>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

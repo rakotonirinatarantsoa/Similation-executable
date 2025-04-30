@@ -1,0 +1,26 @@
+{
+  "name": "simulation",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron-packager .",
+    "build" : "electron-packager . --overwrite --platform=win32 --arch=x64 --icon=img/favicon.ico --out=dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VZNyOnja/startupIS.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VZNyOnja/startupIS/issues"
+  },
+  "homepage": "https://github.com/VZNyOnja/startupIS#readme",
+  "description": "",
+  "dependencies": {
+    "electron": "^35.2.1"
+  },
+  "devDependencies": {
+    "electron-packager": "^17.1.2"
+  }
+}
